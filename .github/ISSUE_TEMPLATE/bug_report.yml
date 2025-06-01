@@ -1,0 +1,38 @@
+name: 🐞 Bug Report
+description: Report something that's not working
+title: "[BUG] <title>"
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Please describe the bug in detail.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: "How can we reproduce the bug?"
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Environment
+      description: OS, browser, Python/Rust version, etc.
+
+  - type: textarea
+    attributes:
+      label: Logs or Screenshots
+      description: Paste any relevant logs or screenshots.
+
+  - type: checkboxes
+    attributes:
+      label: Are you willing to submit a PR?
+      options:
+        - label: Yes, I’d like to help fix this bug

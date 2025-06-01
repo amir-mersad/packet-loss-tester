@@ -1,0 +1,27 @@
+name: 🚀 Feature Request
+description: Suggest a new idea for the project
+title: "[FEATURE] <title>"
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: Describe the Feature
+      description: What's the feature and why do we need it?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe the Solution
+      description: If you have an idea how it could work, explain it here.
+
+  - type: textarea
+    attributes:
+      label: Alternatives or Prior Art
+      description: Any other tools or implementations that inspired you?
+
+  - type: checkboxes
+    attributes:
+      label: Are you willing to implement it?
+      options:
+        - label: Yes, I’d like to implement it
